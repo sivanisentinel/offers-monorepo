@@ -1,0 +1,11 @@
+<div class='offers-page'>
+  <h1>shop</h1>
+  <h2> sale </h2>
+  <div>
+    <div>
+      <div *ngFor="let offer of offersData; let i = index">
+        <offers-monorepo-app-offer [data]="offer" (onClickEvent)='onPurchase($event)'></offers-monorepo-app-offer>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<button class='btn' *ngIf='data!=null'  (click)='purches()'>
+  <div class='title'>
+    {{ data.name }}
+  </div>
+  <div class='price'> price: {{data.price}}$ </div>
+  <div class='count'>
+    {{ data.purchased }}/{{data.limitcount}}
+  </div>
+
+</button>
